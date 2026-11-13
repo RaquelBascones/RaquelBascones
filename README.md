@@ -1,6 +1,6 @@
 # ¡Hola! Soy Raquel 👋
 
-**Estudiante de Ingeniería Informática e Ingeniería Robótica e Inteligencia Artificial · UCJC**
+**Estudiante de Doble grado en Ingeniería Robótica e Inteligencia Artificial e Ingeniería Informática- UCJC**
 
 Lo que más me interesa es aplicar la IA a problemas concretos. Me gusta trabajar con imágenes y datos, probar distintos modelos y entender por qué funcionan mejor en unos casos que en otros. En robótica, me interesa cómo un robot usa lo que capta con la cámara y el LiDAR para entender su entorno.
 
@@ -22,13 +22,21 @@ Lo que más me interesa es aplicar la IA a problemas concretos. Me gusta trabaja
 
 ## 💻 Proyectos
 
-| Proyecto | Qué hice |
-| :--- | :--- |
-| [**Web-Crawler**](https://github.com/RaquelBascones/Web-Crawler) | Extracción de texto web con Python, almacenamiento en SQLite y clasificación con TF‑IDF y Naive Bayes. |
-| [**ShapeLang**](https://github.com/RaquelBascones/ShapeLang) | Intérprete en Python y una interfaz web en JavaScript para programar con figuras geométricas y seguir la ejecución paso a paso. |
-| **Clasificación de imágenes con CNN** | Entrenamiento y evaluación con TensorFlow y Keras. Agrupé imágenes similares antes de dividir los datos para evaluar el modelo. |
-| **Detección de objetos con TurtleBot3** · En curso | Integración de cámara y LiDAR con ROS y evaluación de Faster R‑CNN con PyTorch en Gazebo. |
+### IA y robótica
 
-## 📊 Actividad en GitHub
+- **Percepción con TurtleBot3** · *En curso*. En equipo, adaptamos Faster R-CNN con MobileNetV3 para detectar objetos en Gazebo y evaluamos las predicciones en vistas reservadas. El nodo de fusión en ROS Noetic proyecta los retornos del LiDAR sobre la imagen y solo asigna distancia cuando hay correspondencia geométrica.
+- **Clasificación de imágenes con CNN**. Entrené y evalué redes convolucionales con TensorFlow y Keras. Antes de dividir el conjunto de datos, agrupé imágenes similares para reducir el riesgo de que ejemplos casi idénticos quedaran repartidos entre entrenamiento y evaluación.
+- **[Web-Crawler · Extracción y clasificación de contenido web](https://github.com/RaquelBascones/Web-Crawler)**. En equipo, conectamos la descarga y extracción de texto con la generación de resúmenes, el almacenamiento en SQLite y un informe HTML. El clasificador combina TF-IDF y Naive Bayes multinomial para asignar una categoría a la página analizada.
+- **Diagnóstico de registros ROS 2**. Amplié un analizador de rosbag2 con comprobaciones sobre medidas de distancia. Comparé registros de referencia y de fallo para localizar caídas de frecuencia y aumentos de latencia entre nodos. Automaticé las pruebas unitarias y de regresión con GitHub Actions.
 
-[![Gráfico de contribuciones públicas de Raquel](https://ghchart.rshah.org/8957e5/RaquelBascones)](https://github.com/RaquelBascones#contribution-activity)
+### Desarrollo de software
+
+- **[ShapeLang · Lenguaje de programación visual](https://github.com/RaquelBascones/ShapeLang)**. Las figuras geométricas representan números, operadores y estructuras de control. El intérprete convierte expresiones a notación polaca inversa con *shunting-yard* y las ejecuta en una máquina de pila. La interfaz web muestra cómo cambia la pila en cada paso, también dentro de bucles y condicionales.
+- **[Entorno 3D generado por código en Godot](https://github.com/RaquelBascones/VR-environment-GeometricLanguage)**. Construí una escena interior en GDScript a partir de mallas primitivas. Programé una cámara orbital, combiné iluminación direccional, puntual y focal, y ajusté el marco de las texturas a sus proporciones originales.
+- **[Escritorio interactivo en Java Swing](https://github.com/RaquelBascones/SSOO-Raquel)**. Desarrollé un escritorio con pantalla de inicio, reloj, terminal y acceso a aplicaciones. Incluí Sudoku, Wordle y un ajedrez que separa el tablero de las clases que representan cada tipo de pieza.
+
+### Datos y sistemas
+
+- **Acceso a datos y rendimiento en PostgreSQL**. Trabajé con transacciones y reutilización de conexiones desde Python con psycopg. Usé `COPY` para cargar datos y comparé planes de ejecución antes y después de añadir índices simples y compuestos.
+- **Administración de Ubuntu Server**. Configuré una máquina virtual con Ubuntu Server y OpenSSH. En una práctica de equipo, configuré usuarios, grupos y listas de control de acceso (ACL), y comprobé con distintas cuentas que cada perfil tuviera los permisos previstos.
+- **[MenuFiles · Gestión interactiva de archivos en Bash](https://github.com/RaquelBascones/MenuFiles)**. En equipo, creamos una utilidad de terminal que reúne operaciones de creación, movimiento y borrado de archivos y directorios. Organizamos cada operación en una función y usamos un bucle para volver al menú tras cada acción.
